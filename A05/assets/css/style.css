@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+
+.active {
+  font-weight: 600;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+header {
+  height: 110px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  position: fixed;
+  z-index: 10;
+}
+.fa {
+  color: #292929;
+}
+.fa-bars {
+  font-size: 24px;
+  vertical-align: middle;
+}
+.toogle {
+  display: none;
+  float: right;
+  height: 100%;
+}
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.header-left {
+  float: left;
+  height: 110px;
+  white-space: nowrap;
+}
+.header-left img {
+  vertical-align: middle;
+}
+.header-right {
+  float: right;
+  white-space: nowrap;
+  height: 110px;
+}
+.header-right a {
+  color: #292929;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.top {
+  text-align: center;
+}
+
+.tulisan {
+  background-image: url("../img/background.png");
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  margin: 0 auto;
+  padding: 180px 0 100px 0;
+  color: #fff;
+  width: 100%;
+}
+
+.tulisan h1 {
+  animation-name: dari-kiri;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+
+  opacity: 0;
+}
+
+.tulisan p {
+  animation-name: dari-kiri;
+  animation-duration: 0.7s;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+
+  opacity: 0;
+}
+
+.html img,
+.html p {
+  animation-name: dari-atas;
+  animation-duration: 0.5s;
+  animation-delay: 0.1s;
+  animation-fill-mode: both;
+
+  opacity: 0;
+}
+
+.css img,
+.css p {
+  animation-name: dari-atas;
+  animation-duration: 0.5s;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+
+  opacity: 0;
+}
+
+.js img,
+.js p {
+  animation-name: dari-atas;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+
+  opacity: 0;
+}
+
+.kolom h2 {
+  animation-name: timbul;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+
+  opacity: 0;
+}
+
+.kolom {
+  width: 400px;
+  margin: -100px auto 30px auto;
+  border-radius: 10px;
+  background-color: #fff;
+  background-position: center;
+  box-shadow: 0 3px 20px gray;
+}
+
+.kolom h2 {
+  font-size: 23px;
+  padding-top: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.kol-gbr {
+  display: flex;
+}
+
+.gbr {
+  width: 33.3%;
+}
+
+.gbr img {
+  width: 80px;
+}
+
+.container-2 {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dts {
+  background-color: #fff;
+  padding: 30px;
+}
+
+.konten {
+  width: 50%;
+  text-align: left;
+}
+
+.dts h2,
+.dts p,
+.dts img,
+.tujuan h2,
+.tujuan p,
+.tujuan img {
+  opacity: 0;
+}
+
+.tombol {
+  background-color: #0077b6;
+  padding: 8px;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.5s;
+}
+
+.tombol a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+}
+
+.tombol:hover {
+  opacity: 1;
+}
+
+.gambar {
+  width: 50%;
+  text-align: right;
+}
+
+.tujuan {
+  background-color: #e3f5ff;
+  padding: 30px;
+}
+
+.konten1 {
+  width: 50%;
+  text-align: right;
+}
+
+.gambar1 {
+  width: 50%;
+}
+
+.heading {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.heading h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  opacity: 0;
+}
+.about-wrapper {
+  padding-bottom: 80px;
+  text-align: center;
+}
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+.card-list {
+  background-color: white;
+  box-shadow: 1px 1px 20px rgb(175, 174, 174);
+  border-radius: 15px;
+  width: 100%;
+  max-width: 250px;
+  height: 440px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  opacity: 0;
+}
+
+.content p {
+  padding: 0 12px;
+  font-size: 14px;
+}
+.content h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  padding: 0 5px;
+}
+
+.content img {
+  border-radius: 50%;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+footer {
+  background-color: #0077b6;
+  color: #fff;
+  padding: 40px;
+}
+
+.container-3 {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  align-self: center;
+}
+
+.footer-list li {
+  padding-bottom: 20px;
+  list-style: none;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+/* Animasi */
+@keyframes dari-atas {
+  0% {
+    opacity: 0;
+    transform: translate(0, -70px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes dari-bawah {
+  0% {
+    opacity: 0;
+    transform: translate(0, 70px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes dari-kiri {
+  0% {
+    opacity: 0;
+    transform: translate(-70px, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes dari-kanan {
+  0% {
+    opacity: 0;
+    transform: translate(70px, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes timbul {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
