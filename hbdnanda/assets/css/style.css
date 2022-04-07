@@ -30,11 +30,14 @@ h1, p, span{
     animation: rotation 5s infinite linear;
 }
 @keyframes rotation {
-    from {
-        transform: rotate(0deg);
+    0% {
+        transform: rotate(0deg) scale(1);
     }
-    to {
-        transform: rotate(359deg);
+    50%{
+        transform: rotate(360deg) scale(2);
+    }
+    100%{
+        transform: rotate(720deg) scale(1);
     }
 }
 
